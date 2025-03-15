@@ -47,7 +47,7 @@
 	- Modems : converts between digital and analog signal transmission
 
 
-![[assests/Pasted image 20250315132604.png]]
+![[Networking/assests/Pasted image 20250315134051.png]]
 
 ----------------------------------------
 
