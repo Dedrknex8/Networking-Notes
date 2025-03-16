@@ -50,4 +50,69 @@
 ![[Networking/assests/Pasted image 20250315134051.png]]
 
 ----------------------------------------
+## Some Important Concepts
 
+> Before Diving deep into the layers some **imp* concepts need to learn
+
+- When we send information over the internet it does go as a big chunk of data. Instead it broken down into small chunks of pieces. These pieces are called Segements, Packets & Frames. 
+- Each type has its own job in making sure the information gets where it needs to go.
+1. Segments : `Data is recived in application layer is broken down in smaller parts as per the max window size and the Tcp header is added to the smaller parts.The size of the header can be vary from 20 to 60 Byte` 
+-  The TCP header includes :
+```
+1. Source IP Address  
+2. Destination IP Address  
+3. TTL(time to live)  
+4. Identification  
+5. Protocol type   
+6. Version (version of protocol)  
+7 Options
+```
+
+2. Packets  : `The segments received from the Transport layer are further processed to form the Packets. The IP packet has a header of varying sizes from 20B to 60B. But usually, it is 20B. `
+
+- The `IP` header includes
+
+```
+****1.**** Source IP Address  
+****2.**** Destination IP Address  
+****3.**** TTL(time to live)  
+****4.**** Identification  
+****5.**** Protocol type   
+****6.**** Version (version of protocol)  
+****7.**** Options
+```
+
+
+3. Frames : `The Packets received from the Network Layer further processed to form the Frames. Here is the [Data link layer](https://www.geeksforgeeks.org/data-link-layer-in-osi-model/) the header is added, the header consists of the fields that are mentioned below :`
+```
+1. Source Mac Address
+2. Destination Mac Address
+3.Data
+3. Length
+4. Checksum (CRC)
+```
+
+- What is PDU?
+
+> - PDU stands for Protocol data unit.
+> - When we have to transmit the information, we need to pass the data between each layer one by one. During this process, at each layer (except physical layer), the sending device add a header to the data payload in the form of a chunk, this chunk is called as Protocol data unit i.e. PDU. And the process is called as `encapsulation`. The reverse is called as `de-encapsulation` or `decapsulation`.
+
+# Layer 2 {Data Link Layer}
+
+-  It is responsible for the node-to-node delivery of data within the same local network
+-  Data transmission from one physical device address to another.
+
+- Sub layer of DLL
+### Logical Link Control (LLC)
+
+`This sublayer of the data link layer deals with multiplexing, the flow of data among applications and other services, and LLC is responsible for providing error messages and acknowledgments as well. `
+
+### Media Access Control (MAC)
+
+`MAC sublayer manages the device’s interaction, responsible for addressing frames, and also controls physical media access. The data link layer receives the information in the form of packets from the Network layer, it divides packets into frames and sends those frames bit-by-bit to the underlying physical layer.`
+
+ > The function of data Link Layer
+
+- Flow control means controlling the rate at which data flows
+ ![[assests/Pasted image 20250316123616.png]]
+----------------------------------------
