@@ -116,3 +116,14 @@
 - Flow control means controlling the rate at which data flows
  ![[assests/Pasted image 20250316123616.png]]
 ----------------------------------------
+# Layer 3 Network layer
+
+- It's the layer responsible for moving the data along the networks
+- It offers route for the data packets to transfer across the n\w
+
+#### Function of n\w layer
+
+![[assests/Pasted image 20250317184601.png]]
+
+----------------------------------------
+
