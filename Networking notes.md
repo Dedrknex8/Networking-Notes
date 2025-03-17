@@ -126,4 +126,17 @@
 ![[assests/Pasted image 20250317184601.png]]
 
 ----------------------------------------
+# Layer 4 : Transport Layer
 
+
+- This layer is also known as host-to-host or end-to-end layer.
+- This layer receives data from application layer and then performs segmentation divides the actual message into segments. add the src and destination port number into the header of the segments and transfer into the message to N\w layer .
+- Responsible for reliable data delivery
+- Also provide congestion control
+
+
+#### What is congestion in N\W ?
+
+> Congestion is a situation in which too many sources over a network attempt to send data and the router buffers start overflowing due to which loss of packets occurs.
+
+ - There are some algorithm to control it and transport layer provides that solution like => Leaky Bucket Algorithm.
