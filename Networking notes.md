@@ -140,3 +140,41 @@
 > Congestion is a situation in which too many sources over a network attempt to send data and the router buffers start overflowing due to which loss of packets occurs.
 
  - There are some algorithm to control it and transport layer provides that solution like => Leaky Bucket Algorithm.
+ -----------------------------------------------------------------------
+# Layer 5 {Session layer}
+
+- This layer plays an important role in controlling the dialogues (connections) between computers. This layer is responsible for setting up, coordinating, and terminating conversations, exchanges, and dialogues between the applications at each end.
+- Mainly this layer is used manage, establish and terminate connection b/w local and remote applications
+
+> Functions of layer layer
+
+- Session Establishment 
+- Communicatoin synchronization
+
+How Session layer manage handle synchronization?
+`It uses checkpoints to allow data recovery in case of communication failure.`
+
+--------------------------------------------------------------------------
+# Layer 6 Presentation Layer
+
+- Also known as Data Translation layer
+- Data received from application layer is converted into other form of data
+- Data compression
+- Data encryption and decryption 
+- - ****Interoperability****: Bridges differences in data formats between devices.
+
+Some important Questions in Presentation Layer
+
+****What is TLS in presentation layer?****
+
+`TLS (Transport Layer Security) is a cryptographic protocol that operates at the Presentation Layer. It ensures secure communication between devices by encrypting data, maintaining its integrity, and providing authentication.`
+ 
+2. ****What is SSL vs TLS?****
+
+> ****SSL (Secure Sockets Layer)**** and ****TLS (Transport Layer Security)**** are protocols for securing communication. TLS is the modern, more secure successor to SSL. While SSL (now outdated) had vulnerabilities, TLS improves encryption, authentication, and overall security. TLS is widely used for secure web browsing, replacing SSL.
+
+3. What is Mac and HMAC in SSL/TLS in presentation layer?
+`The SSL protocol uses the MD5 algorithm—which is now outdated—for MAC generation(message authentication codes). TLS uses Hash-Based Message Authentication Code (HMAC) for more complex cryptography and security.`
+
+
+------------------------------------------------------------------------
