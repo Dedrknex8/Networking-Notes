@@ -178,3 +178,9 @@ Some important Questions in Presentation Layer
 
 
 ------------------------------------------------------------------------
+# Layer 7 Application layer
+
+- It deals with data representation i.e it ensure data is readable format for both the sender and receiver, including data translation, compression and encryption
+- It deals with protocols like http, ftp, ssh
+- The main function of application layer is to provide an interface to send and receive data from user.
+-----------------------------------------------------------
