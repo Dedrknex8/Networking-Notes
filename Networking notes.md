@@ -184,3 +184,16 @@ Some important Questions in Presentation Layer
 - It deals with protocols like http, ftp, ssh
 - The main function of application layer is to provide an interface to send and receive data from user.
 -----------------------------------------------------------
+Date `22-03-25`
+# TCP/IP
+- TCP stands for tansmission Control Protocol
+- It is a suite of n\w that defines how a data is transfered across n\w including internet
+![[assests/Pasted image 20250322193850.png]]
+
+- It has basically 4 layer which includes 
+1. Application Layer
+2. Transport Layer
+3. Network Layer
+4. Newtw₹ork access layer
+
+- The above 3 layer has same function as the OSI model
