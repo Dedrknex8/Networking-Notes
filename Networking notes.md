@@ -183,7 +183,14 @@ Some important Questions in Presentation Layer
 - It deals with data representation i.e it ensure data is readable format for both the sender and receiver, including data translation, compression and encryption
 - It deals with protocols like http, ftp, ssh
 - The main function of application layer is to provide an interface to send and receive data from user.
------------------------------------------------------------
+-----------------------------------------
+# Some important points to NOTE:
+
+- A ip has two version ipv4 and v6 the v4 contains 2^128 equiv to 4 billion. It has been exhausted to solve this problem nat is used which known as
+- NAT network address Tarnslation which is used to transalte a network in private n\w and then make it to use in public domain
+- Mac address contains the device address the 3 dig defines the unique manufaturere address
+- 
+------------------
 Date `22-03-25`
 # TCP/IP
 - TCP stands for tansmission Control Protocol
